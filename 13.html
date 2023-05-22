@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function changeImge(){
+            var radioArr = document.getElementsByName("radio_fruits");
+           
+            for (var i =0; i<radioArr.length; i++){
+                if(radioArr[i].checked){
+                    img1.src = radioArr[i].value;
+
+                }
+            }
+        }
+        function init(){
+            img1=document.getElementById("img1");
+            img1.src="https://static.hubzum.zumst.com/hubzum/2017/11/06/13/b9a069e2cb1c4eaf9cfd70071f009cea_780x0c.jpg"
+        }
+    </script>
+</head>
+<body>
+    <form action="">
+       <input type="radio" name="radio_fruits" value="https://i.namu.wiki/i/QHZlaOvDdhvtLDYrA6IRvUZdddgwY9q5d0rMBywEIh7dbcNTCzTmE2CDM05JA9GRuXWqp5LsxE_T8BvGNOJhVA.webp">사과
+       <input type="radio" name="radio_fruits" value="https://static.hubzum.zumst.com/hubzum/2017/11/06/13/b9a069e2cb1c4eaf9cfd70071f009cea_780x0c.jpg">배
+       <input type="radio" name="radio_fruits" value="https://i.namu.wiki/i/c72wLV0hHrSbIVpfjIOWF7LywqgwC5EguadZhezUXJrrJWGjMP8W852oMq2T-SatcqZrVJuQBrBNQpBe0u6klw.webp">키위
+       <input type="radio" name="radio_fruits" value="https://i.namu.wiki/i/uwOpUaWZPXhxxrVZyID_VATqmJvDiJmM8tLYpzlgKcDLWTtehtl9G9_4h8qGYW3t918v1V2a96R0Hu1X5xiNVQ.webp">오렌지
+       <button id="btn" onclick="changeImge()"> 과일 선택 후 클릭</button>
+       <img id="https://i.namu.wiki/i/QHZlaOvDdhvtLDYrA6IRvUZdddgwY9q5d0rMBywEIh7dbcNTCzTmE2CDM05JA9GRuXWqp5LsxE_T8BvGNOJhVA.webp" alt="">
+    </form>
+</body>
+</html>
