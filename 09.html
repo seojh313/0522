@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function event(){
+            var eventTest1 = document.getElementById("eventTest1");
+            var eventTest2 = document.getElementById("eventTest2");
+
+            eventTest1.onclick = Test1;
+            eventTest2.onclick = Test2;
+        }
+        function Test1(){
+            document.body.style.background = "yellow";
+        } 
+        function Test2(){
+            document.body.style.background = "white";
+        } 
+    
+    </script>
+</head>
+<body onload="event()">
+    <button id="eventTest1">버튼1 색변경</button>
+    <button id="eventTest2">버튼2 원래대로 변경</button>
+</body>
+</html>
