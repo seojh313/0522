@@ -8,7 +8,7 @@
         function changeImge(){
             var select1 = document.getElementById("fruit");
             var img1 = document.getElementById("imgFruit");
-                
+
             var path = select1.options[select1.selectedIndex].value;
             img1.src=path;
             img1.width=400;
@@ -19,11 +19,13 @@
 <body>
     <form action="">
         <select id="fruit">
+        <!-- <select id="fruit" onchange="changeImge()"> --> 
             <option value="https://i.namu.wiki/i/QHZlaOvDdhvtLDYrA6IRvUZdddgwY9q5d0rMBywEIh7dbcNTCzTmE2CDM05JA9GRuXWqp5LsxE_T8BvGNOJhVA.webp">Apple</option>
             <option value="https://static.hubzum.zumst.com/hubzum/2017/11/06/13/b9a069e2cb1c4eaf9cfd70071f009cea_780x0c.jpg">Pear</option>
             <option value="https://i.namu.wiki/i/c72wLV0hHrSbIVpfjIOWF7LywqgwC5EguadZhezUXJrrJWGjMP8W852oMq2T-SatcqZrVJuQBrBNQpBe0u6klw.webp">kiwi</option>
             <option value="https://i.namu.wiki/i/uwOpUaWZPXhxxrVZyID_VATqmJvDiJmM8tLYpzlgKcDLWTtehtl9G9_4h8qGYW3t918v1V2a96R0Hu1X5xiNVQ.webp">Orange</option>
         </select>
+        <!-- onchange 사용시 버튼 주석처리하고 실행 -->
         <button id="btn" onclick="changeImge()" type="button"> 과일 선택 후 클릭</button>
         <br>
         <img id = "imgFruit" src="https://i.namu.wiki/i/QHZlaOvDdhvtLDYrA6IRvUZdddgwY9q5d0rMBywEIh7dbcNTCzTmE2CDM05JA9GRuXWqp5LsxE_T8BvGNOJhVA.webp">
